@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 1 Segundo Parcial</title>
+</head>
+<header><h1 style="text-align: center;" >Venta en línea</h1></header>
+<body>
+    <fieldset>
+        <legend>Información General</legend>
+
+        <table>
+            <tbody>
+                <tr>
+                    <td><label for="usuario">Nombres:</label> <br>
+                        <input type="text" name="usuario" maxlength="25" placeholder="nombres " title="name user" required> 
+                    </td> 
+
+                    <td><label for="apellidop">Apellido P:</label><br>
+                        <input type="text" name="apellido paterno" maxlength="25" placeholder="Apellido paterno"> 
+                    </td> 
+                    
+                    <td>
+                        <label for="apellidom">Apellido M:</label> <br>
+                        <input type="text" name="apellido materno" maxlength="25" placeholder="Apellido Materno"> <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="usuario">Nombre usuario</label> <br>
+                        <input type="text" name="usuario" maxlength="25" placeholder="Nombre del usuario" title="name user" required> <br> 
+                    </td>
+                    <td>
+                        <label for="pass">Contraseña</label><br>
+                        <input type="password" name="pass" id="pass" maxlength="35" size="15" placeholder="123456" title="contraseña" required> <br>
+                    </td>
+                    <td>
+                        <label for="fechan">Fecha de nacimiento:</label> <br>
+                        <input type="date" name="fechan" id="fechan"> <br>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Datos de facturación</legend>
+        <table>
+            <tbody>
+                <tr>
+                    <td><label for="pais">País</label><br>
+                        <select id="pais" name="pais">
+                            <option value="1">Mexico</option>
+                            <option value="2">Argentina</option>
+                            <option value="3">Estados Unidos</option>
+                            <option value="3">Canadá</option>
+                        </select>
+                    </td>
+                    <td><label for="ciudad">Ciudad</label><br>
+                        <select id="ciudad" name="ciudad">
+                            <option value="1">San Luis Potosí</option>
+                            <option value="2">Soledad</option>
+                            <option value="3">Rio Verde</option>
+                            <option value="3">Huasteca</option>
+                        </select> 
+                    </td>
+                    <td>
+                        <label for="calle">Calle:</label><br>
+                        <input type="text" id="calle" name="calle" placeholder="Calle 1"><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="houseNumber">Número de casa:</label><br>
+                        <input type="number" id="houseNumber" name="houseNumber" placeholder="#123"><br><br>
+                    </td>
+                    <td>
+                        <label for="colonia">Colonia:</label><br>
+                    <input type="text" id="colonia" name="colonia" placeholder="Colonia 123"><br><br>
+                    </td>
+                    <td>
+                        <label for="correo">E-mail:</label><br>
+                        <input type="email" name="correo" id="correo" required placeholder="123456@upslp.edu.mx"> <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label for="rfc">RFC:</label>
+                        <input type="text" id="rfc" name ="rfc" placeholder="TURFC123" required><br><br>
+                    </td>
+                    <td>
+                        <label for ="cpostal">Código Postal:</label><br>
+                        <input type ="number"id ="cpostal"name ="cpostal" placeholder="12345"><br><br>
+                    </td>
+                    <td>
+                        <input type = "submit"value = "Enviar">
+                        <input type = "reset"value = "Restablecer">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+    <h3>Leonardo Moreno 184296</h3>
+</body>
+</html>
