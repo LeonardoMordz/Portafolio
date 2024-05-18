@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Palindromo</title>
+    <link rel="stylesheet" type="text/css" href="stylesexamen.css">
+</head>
+<body>
+    <h1>Verificar Palíndromo</h1>
+    <form id="palindromoForm">
+        <label for="cadena">Ingrese una frase:</label>
+        <input type="text" id="cadena" name="cadena" required>
+        <button type="button" onclick="verificarPalindromo()">Verificar</button>
+    </form>
+    <p id="resultado"></p>
+    
+    <script src="scriptexamen.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Palindromo</title>
+<script type="text/javascript">
+function palindromo(cadena) {
+ var resultado = "La frase \""+cadena+"\" \n";
+ var cadenaOriginal = cadena.toLowerCase();
+ var letrasEspacios = cadenaOriginal.split("");
+ var cadenaSinEspacios = "";
+ for(i in letrasEspacios) {
+ if(letrasEspacios[i] != " ") {
+ cadenaSinEspacios += letrasEspacios[i];
+ }
+ }
+ var letras = cadenaSinEspacios.split("");
+ var letrasReves = cadenaSinEspacios.split("").reverse();
+ var iguales = true;
+ for(i in letras) {
+ if(letras[i] == letrasReves[i]) {
+
+ }
+ else {
+ iguales = false;
+ }
+ }
+ if(iguales) {
+ resultado += " es un palíndromo";
+ }
+ else {
+ resultado += " no es un palíndromo";
+ }
+ return resultado;
+}
+var cad=prompt("Frase a evaluar: ","");
+alert(palindromo(cad));
+</script>
+</head>
+<body>
+</body>
+</html>
+-->
