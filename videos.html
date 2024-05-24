@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computación Cuántica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="cssFINAL.css">
+</head>
+<body>
+
+  <header>
+    <img src="imagenes/logo.png" alt="Logo de la página" class="logo">
+    <!-- Título principal -->
+    <h1>Computación Cuántica: Explorando el Futuro de la Tecnología</h1>
+    <!-- Menú de navegación -->
+   
+        <nav>
+            <ul class="menu">
+                
+                <li class="submenu-item">
+                    <a href="#" class="enlace-seccion">Hechos</a>
+                    <ul class="submenu">
+                        <li><a href="inicio.html">Información</a></li>
+                        <li><a href="impacto.html">Impacto</a></li>
+                    </ul>
+                </li>
+                <li class="submenu-item">
+                    <a href="#" class="enlace-seccion">Situación</a>
+                    <ul class="submenu">
+                        <li><a href="situacion_actual.html">Situación Actual</a></li>
+                        <li><a href="vision_futuro.html">Visión a Futuro</a></li>
+                    </ul>
+                </li>
+                <li class="submenu-item">
+                    <a href="#" class="enlace-seccion">Cont. Gráfico</a>
+                    <ul class="submenu">
+                        <li><a href="videos.html">Videos</a></li>
+                        <li><a href="galeria.html">Memes</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </li>
+                <li class="submenu-item">
+                    <a href="#" class="enlace-seccion">Otros</a>
+                    <ul class="submenu">
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="cuestionario.html">Cuestionario</a></li>
+                        <li><a href="pfrecuentes.html">Preguntas Frecuentes</a></li>
+                        <li><a href="grupos_ayuda.html">Grupos de Ayuda</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</div>
+</body>
+
+  <!-- Script para la funcionalidad del menú -->
+  <script src="script.js"></script>
+
+<!-- Sección de Información -->
+<section id="informacion" class="seccion">
+  <!-- Título de la sección -->
+  <h2>VIDEOS</h2>
+
+<div class="video-container">
+    <h2>Videos de Computación Cuántica</h2>
+    <div class="video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/smkScPT9Qq-6BaN-" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p>Un video corto que te adentrará en el tema de computación cuántica</p>
+    </div>
+    <div class="video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/YpYuBEzfRlM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p>Usos de la computación cuántica</p>
+    </div>
+    <!-- Agrega más videos aquí si es necesario -->
+  </div>
+
+ 
+ <script src="javaFINAL.js"></script>
+
+<footer id="footer" class="oculto">
+    <!-- Información de derechos de autor y créditos -->
+    <p>&copy; 2024 Computación Cuántica Inc. Todos los derechos reservados.</p>
+    <p> Cristian Emanuel Rangel Bernal & Leonardo Moreno Rodríguez </p>
+    <!-- Enlaces a redes sociales -->
+    <p>Redes sociales: <a href="https://www.instagram.com/upslp_oficial/" target="_blank" class="instagram-link">Instagram
+      <i class="fab fa-instagram fa-lg"></i>
+    </a></p>
+  </footer>
+  
+  <script>
+    window.addEventListener('scroll', function() {
+      var footer = document.getElementById('footer');
+      if (window.scrollY + window.innerHeight >= document.body.offsetHeight) {
+        footer.classList.remove('oculto');
+      } else {
+        footer.classList.add('oculto');
+      }
+    });
+  </script>
+</body>
+</html>

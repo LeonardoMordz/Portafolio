@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Obtener totales del formulario</title>
+    <link rel="stylesheet" href="cssFINAL.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="contiene">
+    <header>
+        <img src="imagenes/logo.png" alt="Logo de la página" class="logo">
+        <!-- Título principal -->
+        <h1>Encuesta Cuántica</h1>
+    
+        <nav>
+            <ul class="menu">
+                
+                <li class="submenu-item">
+                    <a href="#" class="enlace-seccion">Hechos</a>
+                    <ul class="submenu">
+                        <li><a href="inicio.html">Información</a></li>
+                        <li><a href="impacto.html">Impacto</a></li>
+                    </ul>
+                </li>
+                <li class="submenu-item">
+                    <a href="#" class="enlace-seccion">Situación</a>
+                    <ul class="submenu">
+                        <li><a href="situacion_actual.html">Situación Actual</a></li>
+                        <li><a href="vision_futuro.html">Visión a Futuro</a></li>
+                    </ul>
+                </li>
+                <li class="submenu-item">
+                    <a href="#" class="enlace-seccion">Cont. Gráfico</a>
+                    <ul class="submenu">
+                        <li><a href="videos.html">Videos</a></li>
+                        <li><a href="galeria.html">Memes</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </li>
+                <li class="submenu-item">
+                    <a href="#" class="enlace-seccion">Otros</a>
+                    <ul class="submenu">
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="cuestionario.html">Cuestionario</a></li>
+                        <li><a href="pfrecuentes.html">Preguntas Frecuentes</a></li>
+                        <li><a href="grupos_ayuda.html">Grupos de Ayuda</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</div>
+
+
+    <h2>Tu opinion importa</h2>
+    <div>
+        <form>
+            <ul>
+
+               <h2>Tu opinión importa</h2>
+    <div>
+        <form id="quizForm">
+            <ul>
+                <li>¿Qué es un qubit?</li>
+                <input type="radio" name="r1" value="5"> Es la unidad básica de información en computación cuántica.<br>
+                <input type="radio" name="r1" value="0"> Es una variable binaria en sistemas clásicos.<br>
+                <input type="radio" name="r1" value="0"> Es un algoritmo utilizado en computación clásica.<br>
+                <input type="radio" name="r1" value="0"> Es una unidad de almacenamiento en computadoras convencionales.<br>
+
+                <li>¿Qué es la superposición en computación cuántica?</li>
+                <input type="radio" name="r2" value="5"> Es la capacidad de un qubit para estar en múltiples estados al mismo tiempo.<br>
+                <input type="radio" name="r2" value="0"> Es la operación de combinar dos qubits en un solo estado.<br>
+                <input type="radio" name="r2" value="0"> Es la medida de la entropía de un sistema cuántico.<br>
+                <input type="radio" name="r2" value="0"> Es la propiedad que permite calcular la complejidad de un algoritmo cuántico.<br>
+
+                <li>¿Qué es la entrelazación en computación cuántica?</li>
+                <input type="radio" name="r3" value="5"> Es una conexión especial entre qubits que permite correlaciones instantáneas entre ellos.<br>
+                <input type="radio" name="r3" value="0"> Es el proceso de generar nuevos qubits a partir de qubits existentes.<br>
+                <input type="radio" name="r3" value="0"> Es un algoritmo utilizado para la factorización de números grandes.<br>
+                <input type="radio" name="r3" value="0"> Es la propiedad de los qubits de mantener información por largos períodos de tiempo.<br>
+
+                <li>¿Qué es un circuito cuántico?</li>
+                <input type="radio" name="r4" value="5"> Es una secuencia de operaciones cuánticas aplicadas a un conjunto de qubits.<br>
+                <input type="radio" name="r4" value="0"> Es un sistema de lógica digital basado en puertas lógicas cuánticas.<br>
+                <input type="radio" name="r4" value="0"> Es un dispositivo utilizado para enfriar qubits a temperaturas cercanas al cero absoluto.<br>
+                <input type="radio" name="r4" value="0"> Es un modelo teórico para simular fenómenos cuánticos en sistemas clásicos.<br>
+            </ul>
+        </form>
+    </div>
+    <button onclick="califica()">Calificar</button>
+    <p id="total"></p>
+    <p id="comentario"></p>
+    <button onclick="generar()">Ver resultados</button>
+    <iframe id="pdfFrame" frameborder="0" width="60" height="50"></iframe>
+</div>
+</body>
+<!-- Pie de página -->
+<footer id="footer" class="oculto">
+    <!-- Información de derechos de autor y créditos -->
+    <p>&copy; 2024 Computación Cuántica Inc. Todos los derechos reservados.</p>
+    <p> Cristian Emanuel Rangel Bernal & Leonardo Moreno Rodríguez </p>
+    <!-- Enlaces a redes sociales -->
+    <p>Redes sociales: <a href="https://www.instagram.com/upslp_oficial/" target="_blank" class="instagram-link">Instagram
+        <i class="fab fa-instagram fa-lg"></i>
+    </a></p>
+</footer>
+
+
+
+<!-- Script para la funcionalidad de la encuesta -->
+<script src="javaFINAL.js"></script>
+
+</body>
+</html>
