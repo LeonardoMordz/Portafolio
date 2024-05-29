@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="cssFINAL.css">
+</head>
+
+<body>
+    <header><img src="imagenes/logo.png" alt="Logo de la página" class="logo"></header>
+    <nav>
+            <ul class="menu">
+                
+                <li class="submenu-item">
+                    <a href="#" class="enlace-seccion">Hechos</a>
+                    <ul class="submenu">
+                        <li><a href="inicio.html">Información</a></li>
+                        <li><a href="impacto.html">Impacto</a></li>
+                    </ul>
+                </li>
+                <li class="submenu-item">
+                    <a href="#" class="enlace-seccion">Situación</a>
+                    <ul class="submenu">
+                        <li><a href="situacion_actual.html">Situación Actual</a></li>
+                        <li><a href="vision_futuro.html">Visión a Futuro</a></li>
+                    </ul>
+                </li>
+                <li class="submenu-item">
+                    <a href="#" class="enlace-seccion">Cont. Gráfico</a>
+                    <ul class="submenu">
+                        <li><a href="videos.html">Videos</a></li>
+                        <li><a href="galeria.html">Memes</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </li>
+                <li class="submenu-item">
+                    <a href="#" class="enlace-seccion">Otros</a>
+                    <ul class="submenu">
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="cuestionario.html">Cuestionario</a></li>
+                        <li><a href="pfrecuentes.html">Preguntas Frecuentes</a></li>
+                        <li><a href="grupos_ayuda.html">Grupos de Ayuda</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</div>
+
+    <h1>Formulario de Contacto</h1>
+    <form id="contactForm" action="correo.php" method="post">
+        <label for="name">Nombre:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Correo Electrónico:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="message">Mensaje:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+        
+        <button type="submit">Enviar</button>
+    </form>
+
+    <footer id="footer" class="oculto">
+    <!-- Información de derechos de autor y créditos -->
+    <p>&copy; 2024 Computación Cuántica Inc. Todos los derechos reservados.</p>
+    <p> Cristian Emanuel Rangel Bernal & Leonardo Moreno Rodríguez </p>
+    <!-- Enlaces a redes sociales -->
+    <p>Redes sociales: <a href="https://www.instagram.com/upslp_oficial/" target="_blank" class="instagram-link">Instagram
+      <i class="fab fa-instagram fa-lg"></i>
+    </a></p>
+  </footer>
+
+  
+  <script>
+    const footer = document.getElementById('footer');
+
+    function mostrarFooter() {
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+        footer.classList.remove('oculto');
+      } else {
+        footer.classList.add('oculto');
+      }
+    }
+
+    window.addEventListener('scroll', mostrarFooter);
+  </script>
+
+
+
+</body>
+</html>
